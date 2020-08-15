@@ -1,0 +1,21 @@
+.first-logo,
+.second-logo,
+.footer-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.second-logo {
+  color: #000000;
+}
+
+.footer-logo {
+  color: #ffffff;
+}
+.first-logo {
+  color: $accent-color;
+}

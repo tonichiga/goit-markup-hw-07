@@ -1,0 +1,120 @@
+.portfolio-item.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: -15px;
+  padding-left: 0px;
+  padding-bottom: 94px;
+  justify-content: center;
+  /* background-color: teal; */
+}
+.portfolio-item-element {
+  display: block;
+  /* width: calc((100% - 60) / 3); */
+  margin-right: 30px;
+  margin-bottom: 30px;
+  /* padding-bottom: 20px; */
+  border: 1px solid #eeeeee;
+  /* width: 370px; */
+  margin: 15px;
+}
+.portfolio-item-element:nth-child(3n) {
+  margin-right: 0px;
+}
+.portfolio-item-element:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.portfolio .portfolio-title {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-text-color;
+}
+.portfolio .portfolio-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.portfolio .portfolio-pre-text {
+  display: flex;
+
+  padding-left: 25px;
+  padding-right: 25px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: $second-text-color;
+}
+
+.portfolio .item-link {
+  display: flex;
+}
+.portfolio-item-element {
+  display: block;
+}
+/* .portfolio-item-element:focus,
+.portfolio-item-element:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+} */
+
+.portfolio-item-link {
+  display: block;
+  width: 370px;
+  height: 404px;
+  text-decoration: none;
+  transition-duration: 250ms;
+}
+.portfolio-item-link {
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+.portfolio {
+  background-color: $second-text-color;
+}
+.portfolio-item-wrapper {
+  display: block;
+  position: relative;
+  height: 294px;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transition: transform 250ms $defaul-cubic-bezier,
+    opacity 250ms $defaul-cubic-bezier;
+}
+
+.portfolio-item-link {
+  &:hover .wrapper,
+  &:focus .wrapper {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}

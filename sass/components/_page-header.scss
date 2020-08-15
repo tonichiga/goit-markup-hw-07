@@ -1,0 +1,133 @@
+.nav-address {
+  margin-left: auto;
+
+  .address-text {
+    display: flex;
+    align-items: center;
+  }
+  .address {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-sizing: content-box;
+  }
+}
+
+.header-nav .nav-address .address {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav .address-item-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav .mail-item {
+  margin-right: 30px;
+}
+
+/* .header-nav .mail-link,
+.header-nav .tel-link {
+  margin-right: 10px; */
+
+.nav-address .icon-mail-svg {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  transition: 250ms $defaul-cubic-bezier;
+}
+// .address-text:hover .icon-mail-svg,
+// .address-text:focus .icon-mail-svg {
+//   stroke-width: 2px;
+//   fill: $accent-color;
+// }
+
+.icon-mail-svg {
+  .address-text:hover & {
+    stroke-width: 2px;
+    fill: $accent-color;
+  }
+}
+.icon-tel-svg {
+  margin-right: 10px;
+  width: 10px;
+  height: 15px;
+  transition: 250ms $defaul-cubic-bezier;
+}
+
+.icon-tel-svg {
+  .address-text:hover & {
+    stroke-width: 2px;
+    fill: $accent-color;
+  }
+}
+
+.icon-tel-svg {
+  .address-text:hover & {
+    stroke-width: 2px;
+    fill: $accent-color;
+  }
+}
+.first-logo {
+  margin-right: 7px;
+}
+
+.logo {
+  margin-right: 85px;
+}
+
+.site {
+  background-color: #ffffff;
+
+  & .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  & .site-nav {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+  & .site-nav-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav-text,
+.address-text {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  transition: 250ms $defaul-cubic-bezier;
+}
+
+.site-nav-text {
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.site-nav-list-item {
+  position: relative;
+}
+.site-nav-text.current::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  height: 5px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: $accent-color;
+}
+
+.address-text {
+  font-style: normal;
+  font-family: Roboto;
+  color: $primary-text-color;
+}
+.site-nav-text {
+  color: $title-text-color;
+}
