@@ -115,7 +115,9 @@
 /* .modal-lable:not(:placeholder-shown) {
 } */
 /* .modal-form-input:focus + .modal-lable, */
-.modal-form-input:not(:placeholder-shown) + .modal-label {
+.modal-form-input:not(:placeholder-shown) + .modal-label,
+.modal-form-input:focus + .modal-label,
+.modal-form-input:hover + .modal-label {
   color: $accent-color;
   transition: transform 250ms $defaul-cubic-bezier,
     color 250ms $defaul-cubic-bezier;
@@ -135,7 +137,9 @@
   fill: $title-text-color;
   transition: fill 250ms $defaul-cubic-bezier;
 }
-.modal-form-input:not(:placeholder-shown) ~ .modal-form-icon-svg {
+.modal-form-input:not(:placeholder-shown) ~ .modal-form-icon-svg,
+.modal-form-input:focus ~ .modal-form-icon-svg,
+.modal-form-input:hover ~ .modal-form-icon-svg {
   fill: $accent-color;
   transition: fill 250ms $defaul-cubic-bezier;
 }

@@ -43,7 +43,8 @@
 // }
 
 .icon-mail-svg {
-  .address-text:hover & {
+  .address-text:hover &,
+  .address-text:focus & {
     stroke-width: 2px;
     fill: $accent-color;
   }
@@ -56,7 +57,8 @@
 }
 
 .icon-tel-svg {
-  .address-text:hover & {
+  .address-text:hover &,
+  .address-text:focus & {
     stroke-width: 2px;
     fill: $accent-color;
   }
